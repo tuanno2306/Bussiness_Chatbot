@@ -1,0 +1,134 @@
+# ==============================================================================
+# Environment & Secrets (TUYỆT ĐỐI KHÔNG COMMIT KEY/SECRET LÊN GIT)
+# ==============================================================================
+.env
+.env.*
+!.env.example
+secrets.json
+credentials.json
+*.pem
+*.key
+*.cert
+
+# ==============================================================================
+# Python & Virtual Environments
+# ==============================================================================
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Linting
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# ==============================================================================
+# Node.js & Frontend (Web Widget / Admin Dashboard)
+# ==============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Next.js / React build outputs
+.next/
+out/
+.nuxt/
+.cache/
+
+# ==============================================================================
+# Vector Database, Databases & Storage
+# ==============================================================================
+# Qdrant local storage
+qdrant_data/
+storage/
+
+# Redis / Postgres local persistence (Docker volumes)
+redis_data/
+postgres_data/
+
+# SQLite & local DBs
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# ChromaDB / FAISS / Embeddings cache
+chroma_data/
+*.index
+*.parquet
+
+# ==============================================================================
+# Data Ingestion, Uploads & Temporary Cache
+# ==============================================================================
+uploads/
+data/raw/
+data/uploads/
+temp/
+tmp/
+*.tmp
+*.temp
+
+# Document processing temp files
+data/cache/
+*.crdownload
+
+# ==============================================================================
+# Logs & Tracing
+# ==============================================================================
+logs/
+*.log
+celerybeat-schedule
+celerybeat.pid
+
+# Observability (Langfuse / Phoenix local traces)
+.langfuse/
+.phoenix/
+
+# ==============================================================================
+# IDE, Editors & OS Files
+# ==============================================================================
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+/file_md
